@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        var result;
+        function setData(str)
+        console.str()
+
+        if (str == 1) {
+            result = "+";
+        }
+        else if (str == 2) {
+            result = "-";
+        }
+        else if (str == 3) {
+            result = "*";
+        }
+        else if (str == 4)
+        {
+            result = "/";
+        }
+
+        function opertion()
+        {
+            if (result == '+')
+            {
+                var num1 = document.getElementById("n1").value;
+                var num2 = document.getElementById("n2").value;
+                var sum = parseInt(num1) + parseInt(num2);
+                document.getElementById("result").innerHTML = sum;
+            }
+            else if (result == '-') {
+                var num1 = document.getElementById("n1").value;
+                var num2 = document.getElementById("n2").value;
+                var sum = parseInt(num1) - parseInt(num2);
+                document.getElementById("result").innerHTML = sum;
+            }
+            else if (result == '*')
+            else (result == '/')
+            {
+                    var num1 = document.getElementById("n1").value;
+                    var num2 = document.getElementById("n2").value;
+                    var sum = parseInt(num1) / parseInt(num2);
+                    document.getElementById("result").innerHTML = sum;
+                }
+        }
+    </script>
+</head>
+<body>
+    <p>
+        Enter the 1st number:<input type="Number" id="n1" />
+
+
+    </p>
+    <p>
+        Enter the 2nd Number:<input type="number" id="n2" />
+    </p>
+    <p>
+        Result:<input type="number" id="n3" />
+    </p>
+
+    <p>
+        <input type="button" value="+" onclick="setData(1)" />
+        <input type="button" value="-" onclick="setData(2)" />
+        <input type="button" value="=" onclick="operation()" />
+
+        <input type="button" value="*" />
+        <input type="button" value="/" />
+
+    </p>
+</body>
+</html>
